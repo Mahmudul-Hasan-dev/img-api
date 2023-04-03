@@ -11,7 +11,7 @@ function displayPhoto(photos) {
     for (const photo of photos) {
         console.log(photo)
         const div = document.createElement('div')
-        div.classList = "col-4"
+        div.classList = "col-4 my-3"
         div.innerHTML = `<img src="${photo.thumbnailUrl}" alt="">
         <h4>${photo.title}</h4>`
         photoContainer.appendChild(div);
